@@ -1,0 +1,70 @@
+.night_btn{
+    position: fixed;
+    right: 15px;
+    top: 90px;
+    border: none;
+    outline: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 7px;
+    background-color: rgba(96, 156, 196, 0.5);
+    transition:  filter .4s, background-color .4s ;
+    cursor: pointer;
+
+}
+
+.night_btn:hover{   
+filter: brightness(140%);
+}
+
+.night_btn:active{
+    filter: brightness(80%);
+    }
+
+.night_btn_icon{
+    position: absolute;
+    width: 40px;
+    right: 7px;
+    top: 10px;
+    height: 40px;
+    opacity: 0;
+    transition: opasity .4s;
+
+}
+
+.night_btn_icon circle,
+.night_btn_icon path{
+   
+    fill: rgba(63, 62, 62, 0.6);
+
+}
+
+.night_btn_icon_moon{
+    opacity: 1;
+}
+body{
+    
+    transition:  background-color .4s, color .4s;
+}
+
+
+body.night-theme{
+
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+
+body.night-theme .night_btn{
+    top: 90px;
+    background-color: rgba(208, 216, 103, 0.5);
+
+}
+
+body.night-theme .night_btn_icon_moon{
+    
+    opacity: 0;
+}
+
+body.night-theme .night_btn_icon_sun{
+    opacity: 1;
+}

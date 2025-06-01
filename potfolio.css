@@ -1,0 +1,418 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: silver;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    background: #007bff;
+    padding: 10px 25px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background: #0056b3;
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.4);
+}
+
+.content {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text {
+    background: #ffffff;
+    padding: 50px;
+    margin: 80px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.text h1,
+.text h2,
+.text h3 {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.photo1 img,
+.photo2 img,
+.photo3 img {
+    transition: 0.5s;
+    position: relative;
+    width: 500px;
+    height: 320px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.photo1 img:hover,
+.photo2 img:hover,
+.photo3 img:hover {
+    border-radius: 1%;
+    border: -2px solid #e2e2d7;
+    transform: translate(0%, -3%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1.3);
+}
+
+hr {
+    border: none;
+    height: 1.5px;
+    background-color: #333;
+    margin: 30px 5px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.me {
+    margin: 60px;
+    padding: 55px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.me h2 {
+    width: 33%;
+    margin: 40px auto;
+    padding: 33px;
+    border: 5px solid navy;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #d4bae8;
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.tables-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    background: rgb(103, 103, 250);
+}
+
+.styled-table td {
+    padding: 25px;
+    line-height: 1.7;
+}
+
+.styled-table h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.styled-table h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+}
+
+.styled-table p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.table-1 {
+    border-left: 5px solid #3498db;
+}
+
+.table-2 {
+    border-left: 5px solid #2ecc71;
+}
+
+.table-3 {
+    border-left: 5px solid #f39c12;
+}
+
+.styled-table:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(103, 103, 250);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    animation: glowing 20s linear infinite;
+}
+
+.glow-on-hover:hover {
+    transform: scale(1.05);
+}
+
+.glow-on-hover:active {
+    color: #000;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.moy_put_zag h2 {
+    background: rgb(103, 103, 250);
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.put p {
+    background: #ffffff;
+    color: #1c1a1a;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.instagram img{
+
+    max-width: 152px;
+}
+
+.telegram img{
+    position: relative;
+    margin-top: 0px;
+    max-width: 170px;
+}
+
+.vk img{
+    max-width: 82px;
+}
+
+.tiktok img{
+    max-width: 127px;
+}  
+.konec h2,
+.sps h2 {
+    background-color: rgb(103, 103, 250);
+    padding: 35px;
+    margin: 30px auto;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #d4bae8;
+    background-color: white;
+    border: 2px solid #d4bae8;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(106, 17, 203, 0.2);
+}
+
+.link-button:hover {
+    background-color: #6a11cb;
+    color: white;
+    box-shadow: 0 6px 14px rgba(106, 17, 203, 0.4);
+    transform: translateY(-2px);
+}
+
+.link-button:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 7px rgba(106, 17, 203, 0.3);
+}
+
+@media (max-width: 1024px) {
+    .photo1 img,
+    .photo2 img,
+    .photo3 img {
+        width: 90%;
+        height: auto;
+    }
+
+    .me h2,
+    .konec h2,
+    .sps h2 {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .telegram img,
+    .tiktok img,
+    .vk img,
+    .instagram img {
+        margin: 10px;
+        position: static;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 600px) {
+    .photo1 img,
+    .photo2 img,
+    .photo3 img {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .container,
+    .content,
+    .text,
+    .me,
+    .moy_put_zag h2,
+    .put p,
+    .konec h2,
+    .sps h2 {
+        padding: 10px;
+        margin: 10px auto;
+        width: 95%;
+    }
+
+    .navbar a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .glow-on-hover {
+        width: 100%;
+        font-size: 16px;
+        height: 45px;
+    }
+
+    .link-button {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .styled-table {
+        font-size: 0.9em;
+    }
+
+    .tables-container {
+        padding: 10px;
+    }
+}
